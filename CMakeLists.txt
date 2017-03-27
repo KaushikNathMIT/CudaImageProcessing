@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.6)
+project(cuda2)
+find_package(CUDA REQUIRED)
+find_package(OpenCV REQUIRED)
+set(CMAKE_CXX_STANDARD 11)
+
+set(SOURCE_FILES test.cu BasicFilter.cpp)
+cuda_add_executable(cuda2 test.cu)
+add_executable(cudaocv BasicFilter.cpp)
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+target_link_libraries( cudaocv ${OpenCV_LIBS} )

@@ -1,0 +1,4 @@
+/home/kaushik/CLionProjects/cuda2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/kaushik/CLionProjects/cuda2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/kaushik/CLionProjects/cuda2/cmake-build-debug/CMakeFiles/cudaocv.dir
+/home/kaushik/CLionProjects/cuda2/cmake-build-debug/CMakeFiles/cuda2.dir
