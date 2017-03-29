@@ -43,10 +43,10 @@ RM = /opt/clion-2016.3.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kaushik/CLionProjects/cuda2
+CMAKE_SOURCE_DIR = /home/kaushik/CLionProjects/CudaImageArchitecture
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kaushik/CLionProjects/cuda2/cmake-build-debug
+CMAKE_BINARY_DIR = /home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/cudaocv.dir/depend.make
@@ -57,38 +57,38 @@ include CMakeFiles/cudaocv.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cudaocv.dir/flags.make
 
-CMakeFiles/cudaocv.dir/BasicFilter.cpp.o: CMakeFiles/cudaocv.dir/flags.make
-CMakeFiles/cudaocv.dir/BasicFilter.cpp.o: ../BasicFilter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kaushik/CLionProjects/cuda2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cudaocv.dir/BasicFilter.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cudaocv.dir/BasicFilter.cpp.o -c /home/kaushik/CLionProjects/cuda2/BasicFilter.cpp
+CMakeFiles/cudaocv.dir/SupportingFiles/BasicFilter.cpp.o: CMakeFiles/cudaocv.dir/flags.make
+CMakeFiles/cudaocv.dir/SupportingFiles/BasicFilter.cpp.o: ../SupportingFiles/BasicFilter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cudaocv.dir/SupportingFiles/BasicFilter.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cudaocv.dir/SupportingFiles/BasicFilter.cpp.o -c /home/kaushik/CLionProjects/CudaImageArchitecture/SupportingFiles/BasicFilter.cpp
 
-CMakeFiles/cudaocv.dir/BasicFilter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cudaocv.dir/BasicFilter.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kaushik/CLionProjects/cuda2/BasicFilter.cpp > CMakeFiles/cudaocv.dir/BasicFilter.cpp.i
+CMakeFiles/cudaocv.dir/SupportingFiles/BasicFilter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cudaocv.dir/SupportingFiles/BasicFilter.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kaushik/CLionProjects/CudaImageArchitecture/SupportingFiles/BasicFilter.cpp > CMakeFiles/cudaocv.dir/SupportingFiles/BasicFilter.cpp.i
 
-CMakeFiles/cudaocv.dir/BasicFilter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cudaocv.dir/BasicFilter.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kaushik/CLionProjects/cuda2/BasicFilter.cpp -o CMakeFiles/cudaocv.dir/BasicFilter.cpp.s
+CMakeFiles/cudaocv.dir/SupportingFiles/BasicFilter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cudaocv.dir/SupportingFiles/BasicFilter.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kaushik/CLionProjects/CudaImageArchitecture/SupportingFiles/BasicFilter.cpp -o CMakeFiles/cudaocv.dir/SupportingFiles/BasicFilter.cpp.s
 
-CMakeFiles/cudaocv.dir/BasicFilter.cpp.o.requires:
+CMakeFiles/cudaocv.dir/SupportingFiles/BasicFilter.cpp.o.requires:
 
-.PHONY : CMakeFiles/cudaocv.dir/BasicFilter.cpp.o.requires
+.PHONY : CMakeFiles/cudaocv.dir/SupportingFiles/BasicFilter.cpp.o.requires
 
-CMakeFiles/cudaocv.dir/BasicFilter.cpp.o.provides: CMakeFiles/cudaocv.dir/BasicFilter.cpp.o.requires
-	$(MAKE) -f CMakeFiles/cudaocv.dir/build.make CMakeFiles/cudaocv.dir/BasicFilter.cpp.o.provides.build
-.PHONY : CMakeFiles/cudaocv.dir/BasicFilter.cpp.o.provides
+CMakeFiles/cudaocv.dir/SupportingFiles/BasicFilter.cpp.o.provides: CMakeFiles/cudaocv.dir/SupportingFiles/BasicFilter.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cudaocv.dir/build.make CMakeFiles/cudaocv.dir/SupportingFiles/BasicFilter.cpp.o.provides.build
+.PHONY : CMakeFiles/cudaocv.dir/SupportingFiles/BasicFilter.cpp.o.provides
 
-CMakeFiles/cudaocv.dir/BasicFilter.cpp.o.provides.build: CMakeFiles/cudaocv.dir/BasicFilter.cpp.o
+CMakeFiles/cudaocv.dir/SupportingFiles/BasicFilter.cpp.o.provides.build: CMakeFiles/cudaocv.dir/SupportingFiles/BasicFilter.cpp.o
 
 
 # Object files for target cudaocv
 cudaocv_OBJECTS = \
-"CMakeFiles/cudaocv.dir/BasicFilter.cpp.o"
+"CMakeFiles/cudaocv.dir/SupportingFiles/BasicFilter.cpp.o"
 
 # External object files for target cudaocv
 cudaocv_EXTERNAL_OBJECTS =
 
-cudaocv: CMakeFiles/cudaocv.dir/BasicFilter.cpp.o
+cudaocv: CMakeFiles/cudaocv.dir/SupportingFiles/BasicFilter.cpp.o
 cudaocv: CMakeFiles/cudaocv.dir/build.make
 cudaocv: /usr/local/lib/libopencv_cudabgsegm.so.3.2.0
 cudaocv: /usr/local/lib/libopencv_cudaobjdetect.so.3.2.0
@@ -119,7 +119,7 @@ cudaocv: /usr/local/lib/libopencv_imgproc.so.3.2.0
 cudaocv: /usr/local/lib/libopencv_core.so.3.2.0
 cudaocv: /usr/local/lib/libopencv_cudev.so.3.2.0
 cudaocv: CMakeFiles/cudaocv.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kaushik/CLionProjects/cuda2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable cudaocv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable cudaocv"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cudaocv.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -127,7 +127,7 @@ CMakeFiles/cudaocv.dir/build: cudaocv
 
 .PHONY : CMakeFiles/cudaocv.dir/build
 
-CMakeFiles/cudaocv.dir/requires: CMakeFiles/cudaocv.dir/BasicFilter.cpp.o.requires
+CMakeFiles/cudaocv.dir/requires: CMakeFiles/cudaocv.dir/SupportingFiles/BasicFilter.cpp.o.requires
 
 .PHONY : CMakeFiles/cudaocv.dir/requires
 
@@ -136,6 +136,6 @@ CMakeFiles/cudaocv.dir/clean:
 .PHONY : CMakeFiles/cudaocv.dir/clean
 
 CMakeFiles/cudaocv.dir/depend:
-	cd /home/kaushik/CLionProjects/cuda2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kaushik/CLionProjects/cuda2 /home/kaushik/CLionProjects/cuda2 /home/kaushik/CLionProjects/cuda2/cmake-build-debug /home/kaushik/CLionProjects/cuda2/cmake-build-debug /home/kaushik/CLionProjects/cuda2/cmake-build-debug/CMakeFiles/cudaocv.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kaushik/CLionProjects/CudaImageArchitecture /home/kaushik/CLionProjects/CudaImageArchitecture /home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug /home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug /home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles/cudaocv.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cudaocv.dir/depend
 

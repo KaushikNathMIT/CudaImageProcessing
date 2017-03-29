@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/kaushik/CLionProjects/cuda2/BasicFilter.cpp" "/home/kaushik/CLionProjects/cuda2/cmake-build-debug/CMakeFiles/cudaocv.dir/BasicFilter.cpp.o"
+  "/home/kaushik/CLionProjects/CudaImageArchitecture/SupportingFiles/BasicFilter.cpp" "/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles/cudaocv.dir/SupportingFiles/BasicFilter.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/cuda2.dir/cuda2_generated_test.cu.o"
+  "CMakeFiles/cuda2.dir/SupportingFiles/cuda2_generated_test.cu.o"
   "cuda2.pdb"
   "cuda2"
 )

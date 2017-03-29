@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/cudaocv.dir/BasicFilter.cpp.o"
+  "CMakeFiles/cudaocv.dir/SupportingFiles/BasicFilter.cpp.o"
   "cudaocv.pdb"
   "cudaocv"
 )

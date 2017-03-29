@@ -8,28 +8,78 @@
 		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\usr\local\share\OpenCV\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/kaushik/CLionProjects/cuda2/cmake-build-debug"/>
+				<Option working_dir="/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/kaushik/CLionProjects/cuda2/cmake-build-debug"/>
+				<Option working_dir="/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cudaLibrary">
+				<Option output="/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/libcudaLibrary.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 cudaLibrary"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cudaLibrary/fast">
+				<Option output="/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/libcudaLibrary.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 cudaLibrary/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="simpleFaceDetect">
-				<Option output="/home/kaushik/CLionProjects/cuda2/cmake-build-debug/simpleFaceDetect" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/kaushik/CLionProjects/cuda2/cmake-build-debug"/>
+				<Option output="/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/simpleFaceDetect" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -46,15 +96,15 @@
 					<Add directory="/usr/include/c++/5/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 simpleFaceDetect"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 simpleFaceDetect"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="simpleFaceDetect/fast">
-				<Option output="/home/kaushik/CLionProjects/cuda2/cmake-build-debug/simpleFaceDetect" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/kaushik/CLionProjects/cuda2/cmake-build-debug"/>
+				<Option output="/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/simpleFaceDetect" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -71,15 +121,65 @@
 					<Add directory="/usr/include/c++/5/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 simpleFaceDetect/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 simpleFaceDetect/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testlibrary">
+				<Option output="/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/testlibrary" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 testlibrary"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testlibrary/fast">
+				<Option output="/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/testlibrary" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 testlibrary/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cudaFaceDetect">
-				<Option output="/home/kaushik/CLionProjects/cuda2/cmake-build-debug/cudaFaceDetect" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/kaushik/CLionProjects/cuda2/cmake-build-debug"/>
+				<Option output="/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/cudaFaceDetect" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -96,15 +196,15 @@
 					<Add directory="/usr/include/c++/5/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 cudaFaceDetect"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 cudaFaceDetect"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cudaFaceDetect/fast">
-				<Option output="/home/kaushik/CLionProjects/cuda2/cmake-build-debug/cudaFaceDetect" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/kaushik/CLionProjects/cuda2/cmake-build-debug"/>
+				<Option output="/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/cudaFaceDetect" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -121,25 +221,25 @@
 					<Add directory="/usr/include/c++/5/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 cudaFaceDetect/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 cudaFaceDetect/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/kaushik/CLionProjects/cuda2/cmake-build-debug"/>
+				<Option working_dir="/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cudaocv">
-				<Option output="/home/kaushik/CLionProjects/cuda2/cmake-build-debug/cudaocv" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/kaushik/CLionProjects/cuda2/cmake-build-debug"/>
+				<Option output="/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/cudaocv" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -156,15 +256,15 @@
 					<Add directory="/usr/include/c++/5/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 cudaocv"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 cudaocv"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cudaocv/fast">
-				<Option output="/home/kaushik/CLionProjects/cuda2/cmake-build-debug/cudaocv" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/kaushik/CLionProjects/cuda2/cmake-build-debug"/>
+				<Option output="/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/cudaocv" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -181,15 +281,15 @@
 					<Add directory="/usr/include/c++/5/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 cudaocv/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 cudaocv/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cuda2">
-				<Option output="/home/kaushik/CLionProjects/cuda2/cmake-build-debug/cuda2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/kaushik/CLionProjects/cuda2/cmake-build-debug"/>
+				<Option output="/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/cuda2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -206,15 +306,15 @@
 					<Add directory="/usr/include/c++/5/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 cuda2"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 cuda2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cuda2/fast">
-				<Option output="/home/kaushik/CLionProjects/cuda2/cmake-build-debug/cuda2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/kaushik/CLionProjects/cuda2/cmake-build-debug"/>
+				<Option output="/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/cuda2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -231,47 +331,56 @@
 					<Add directory="/usr/include/c++/5/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 cuda2/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/cuda2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 cuda2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/kaushik/CLionProjects/cuda2/BasicFilter.cpp">
+		<Unit filename="/home/kaushik/CLionProjects/CudaImageArchitecture/MainLibrary/ObjectDetectCuda.cpp">
+			<Option target="cudaLibrary"/>
+		</Unit>
+		<Unit filename="/home/kaushik/CLionProjects/CudaImageArchitecture/MainLibrary/ObjectDetectCuda.h">
+			<Option target="cudaLibrary"/>
+		</Unit>
+		<Unit filename="/home/kaushik/CLionProjects/CudaImageArchitecture/SupportingFiles/BasicFilter.cpp">
 			<Option target="cudaocv"/>
 		</Unit>
-		<Unit filename="/home/kaushik/CLionProjects/cuda2/BasicFilter.h">
+		<Unit filename="/home/kaushik/CLionProjects/CudaImageArchitecture/SupportingFiles/BasicFilter.h">
 			<Option target="cudaocv"/>
 		</Unit>
-		<Unit filename="/home/kaushik/CLionProjects/cuda2/FaceDetectionCuda.cpp">
+		<Unit filename="/home/kaushik/CLionProjects/CudaImageArchitecture/SupportingFiles/FaceDetectionCuda.cpp">
 			<Option target="cudaFaceDetect"/>
 		</Unit>
-		<Unit filename="/home/kaushik/CLionProjects/cuda2/FaceDetectionCuda.h">
+		<Unit filename="/home/kaushik/CLionProjects/CudaImageArchitecture/SupportingFiles/FaceDetectionCuda.h">
 			<Option target="cudaFaceDetect"/>
 		</Unit>
-		<Unit filename="/home/kaushik/CLionProjects/cuda2/FaceDetectionSimple.cpp">
+		<Unit filename="/home/kaushik/CLionProjects/CudaImageArchitecture/SupportingFiles/FaceDetectionSimple.cpp">
 			<Option target="simpleFaceDetect"/>
 		</Unit>
-		<Unit filename="/home/kaushik/CLionProjects/cuda2/FaceDetectionSimple.h">
+		<Unit filename="/home/kaushik/CLionProjects/CudaImageArchitecture/SupportingFiles/FaceDetectionSimple.h">
 			<Option target="simpleFaceDetect"/>
 		</Unit>
-		<Unit filename="/home/kaushik/CLionProjects/cuda2/test.cu">
+		<Unit filename="/home/kaushik/CLionProjects/CudaImageArchitecture/SupportingFiles/test.cu">
 			<Option target="cuda2"/>
 		</Unit>
-		<Unit filename="/home/kaushik/CLionProjects/cuda2/CMakeLists.txt">
+		<Unit filename="/home/kaushik/CLionProjects/CudaImageArchitecture/TestLibrary.cpp">
+			<Option target="testlibrary"/>
+		</Unit>
+		<Unit filename="/home/kaushik/CLionProjects/CudaImageArchitecture/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/kaushik/CLionProjects/cuda2/../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
+		<Unit filename="/home/kaushik/CLionProjects/CudaImageArchitecture/../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\OpenCV\"/>
 		</Unit>
-		<Unit filename="/home/kaushik/CLionProjects/cuda2/../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
+		<Unit filename="/home/kaushik/CLionProjects/CudaImageArchitecture/../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\OpenCV\"/>
 		</Unit>
-		<Unit filename="/home/kaushik/CLionProjects/cuda2/../../../../usr/local/share/OpenCV/OpenCVModules.cmake">
+		<Unit filename="/home/kaushik/CLionProjects/CudaImageArchitecture/../../../../usr/local/share/OpenCV/OpenCVModules.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\OpenCV\"/>
 		</Unit>
-		<Unit filename="/home/kaushik/CLionProjects/cuda2/../../../../usr/local/share/OpenCV/OpenCVModules-release.cmake">
+		<Unit filename="/home/kaushik/CLionProjects/CudaImageArchitecture/../../../../usr/local/share/OpenCV/OpenCVModules-release.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\OpenCV\"/>
 		</Unit>
 	</Project>

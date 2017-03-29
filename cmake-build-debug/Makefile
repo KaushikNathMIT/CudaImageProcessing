@@ -48,10 +48,10 @@ RM = /opt/clion-2016.3.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kaushik/CLionProjects/cuda2
+CMAKE_SOURCE_DIR = /home/kaushik/CLionProjects/CudaImageArchitecture
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kaushik/CLionProjects/cuda2/cmake-build-debug
+CMAKE_BINARY_DIR = /home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaushik/CLionProjects/cuda2/cmake-build-debug/CMakeFiles /home/kaushik/CLionProjects/cuda2/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles /home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaushik/CLionProjects/cuda2/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named cudaLibrary
+
+# Build rule for target.
+cudaLibrary: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cudaLibrary
+.PHONY : cudaLibrary
+
+# fast build rule for target.
+cudaLibrary/fast:
+	$(MAKE) -f CMakeFiles/cudaLibrary.dir/build.make CMakeFiles/cudaLibrary.dir/build
+.PHONY : cudaLibrary/fast
+
+#=============================================================================
 # Target rules for targets named simpleFaceDetect
 
 # Build rule for target.
@@ -122,6 +135,19 @@ simpleFaceDetect: cmake_check_build_system
 simpleFaceDetect/fast:
 	$(MAKE) -f CMakeFiles/simpleFaceDetect.dir/build.make CMakeFiles/simpleFaceDetect.dir/build
 .PHONY : simpleFaceDetect/fast
+
+#=============================================================================
+# Target rules for targets named testlibrary
+
+# Build rule for target.
+testlibrary: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testlibrary
+.PHONY : testlibrary
+
+# fast build rule for target.
+testlibrary/fast:
+	$(MAKE) -f CMakeFiles/testlibrary.dir/build.make CMakeFiles/testlibrary.dir/build
+.PHONY : testlibrary/fast
 
 #=============================================================================
 # Target rules for targets named cudaFaceDetect
@@ -162,86 +188,140 @@ cuda2/fast:
 	$(MAKE) -f CMakeFiles/cuda2.dir/build.make CMakeFiles/cuda2.dir/build
 .PHONY : cuda2/fast
 
-BasicFilter.o: BasicFilter.cpp.o
+MainLibrary/ObjectDetectCuda.o: MainLibrary/ObjectDetectCuda.cpp.o
 
-.PHONY : BasicFilter.o
-
-# target to build an object file
-BasicFilter.cpp.o:
-	$(MAKE) -f CMakeFiles/cudaocv.dir/build.make CMakeFiles/cudaocv.dir/BasicFilter.cpp.o
-.PHONY : BasicFilter.cpp.o
-
-BasicFilter.i: BasicFilter.cpp.i
-
-.PHONY : BasicFilter.i
-
-# target to preprocess a source file
-BasicFilter.cpp.i:
-	$(MAKE) -f CMakeFiles/cudaocv.dir/build.make CMakeFiles/cudaocv.dir/BasicFilter.cpp.i
-.PHONY : BasicFilter.cpp.i
-
-BasicFilter.s: BasicFilter.cpp.s
-
-.PHONY : BasicFilter.s
-
-# target to generate assembly for a file
-BasicFilter.cpp.s:
-	$(MAKE) -f CMakeFiles/cudaocv.dir/build.make CMakeFiles/cudaocv.dir/BasicFilter.cpp.s
-.PHONY : BasicFilter.cpp.s
-
-FaceDetectionCuda.o: FaceDetectionCuda.cpp.o
-
-.PHONY : FaceDetectionCuda.o
+.PHONY : MainLibrary/ObjectDetectCuda.o
 
 # target to build an object file
-FaceDetectionCuda.cpp.o:
-	$(MAKE) -f CMakeFiles/cudaFaceDetect.dir/build.make CMakeFiles/cudaFaceDetect.dir/FaceDetectionCuda.cpp.o
-.PHONY : FaceDetectionCuda.cpp.o
+MainLibrary/ObjectDetectCuda.cpp.o:
+	$(MAKE) -f CMakeFiles/cudaLibrary.dir/build.make CMakeFiles/cudaLibrary.dir/MainLibrary/ObjectDetectCuda.cpp.o
+.PHONY : MainLibrary/ObjectDetectCuda.cpp.o
 
-FaceDetectionCuda.i: FaceDetectionCuda.cpp.i
+MainLibrary/ObjectDetectCuda.i: MainLibrary/ObjectDetectCuda.cpp.i
 
-.PHONY : FaceDetectionCuda.i
+.PHONY : MainLibrary/ObjectDetectCuda.i
 
 # target to preprocess a source file
-FaceDetectionCuda.cpp.i:
-	$(MAKE) -f CMakeFiles/cudaFaceDetect.dir/build.make CMakeFiles/cudaFaceDetect.dir/FaceDetectionCuda.cpp.i
-.PHONY : FaceDetectionCuda.cpp.i
+MainLibrary/ObjectDetectCuda.cpp.i:
+	$(MAKE) -f CMakeFiles/cudaLibrary.dir/build.make CMakeFiles/cudaLibrary.dir/MainLibrary/ObjectDetectCuda.cpp.i
+.PHONY : MainLibrary/ObjectDetectCuda.cpp.i
 
-FaceDetectionCuda.s: FaceDetectionCuda.cpp.s
+MainLibrary/ObjectDetectCuda.s: MainLibrary/ObjectDetectCuda.cpp.s
 
-.PHONY : FaceDetectionCuda.s
+.PHONY : MainLibrary/ObjectDetectCuda.s
 
 # target to generate assembly for a file
-FaceDetectionCuda.cpp.s:
-	$(MAKE) -f CMakeFiles/cudaFaceDetect.dir/build.make CMakeFiles/cudaFaceDetect.dir/FaceDetectionCuda.cpp.s
-.PHONY : FaceDetectionCuda.cpp.s
+MainLibrary/ObjectDetectCuda.cpp.s:
+	$(MAKE) -f CMakeFiles/cudaLibrary.dir/build.make CMakeFiles/cudaLibrary.dir/MainLibrary/ObjectDetectCuda.cpp.s
+.PHONY : MainLibrary/ObjectDetectCuda.cpp.s
 
-FaceDetectionSimple.o: FaceDetectionSimple.cpp.o
+SupportingFiles/BasicFilter.o: SupportingFiles/BasicFilter.cpp.o
 
-.PHONY : FaceDetectionSimple.o
+.PHONY : SupportingFiles/BasicFilter.o
 
 # target to build an object file
-FaceDetectionSimple.cpp.o:
-	$(MAKE) -f CMakeFiles/simpleFaceDetect.dir/build.make CMakeFiles/simpleFaceDetect.dir/FaceDetectionSimple.cpp.o
-.PHONY : FaceDetectionSimple.cpp.o
+SupportingFiles/BasicFilter.cpp.o:
+	$(MAKE) -f CMakeFiles/cudaocv.dir/build.make CMakeFiles/cudaocv.dir/SupportingFiles/BasicFilter.cpp.o
+.PHONY : SupportingFiles/BasicFilter.cpp.o
 
-FaceDetectionSimple.i: FaceDetectionSimple.cpp.i
+SupportingFiles/BasicFilter.i: SupportingFiles/BasicFilter.cpp.i
 
-.PHONY : FaceDetectionSimple.i
+.PHONY : SupportingFiles/BasicFilter.i
 
 # target to preprocess a source file
-FaceDetectionSimple.cpp.i:
-	$(MAKE) -f CMakeFiles/simpleFaceDetect.dir/build.make CMakeFiles/simpleFaceDetect.dir/FaceDetectionSimple.cpp.i
-.PHONY : FaceDetectionSimple.cpp.i
+SupportingFiles/BasicFilter.cpp.i:
+	$(MAKE) -f CMakeFiles/cudaocv.dir/build.make CMakeFiles/cudaocv.dir/SupportingFiles/BasicFilter.cpp.i
+.PHONY : SupportingFiles/BasicFilter.cpp.i
 
-FaceDetectionSimple.s: FaceDetectionSimple.cpp.s
+SupportingFiles/BasicFilter.s: SupportingFiles/BasicFilter.cpp.s
 
-.PHONY : FaceDetectionSimple.s
+.PHONY : SupportingFiles/BasicFilter.s
 
 # target to generate assembly for a file
-FaceDetectionSimple.cpp.s:
-	$(MAKE) -f CMakeFiles/simpleFaceDetect.dir/build.make CMakeFiles/simpleFaceDetect.dir/FaceDetectionSimple.cpp.s
-.PHONY : FaceDetectionSimple.cpp.s
+SupportingFiles/BasicFilter.cpp.s:
+	$(MAKE) -f CMakeFiles/cudaocv.dir/build.make CMakeFiles/cudaocv.dir/SupportingFiles/BasicFilter.cpp.s
+.PHONY : SupportingFiles/BasicFilter.cpp.s
+
+SupportingFiles/FaceDetectionCuda.o: SupportingFiles/FaceDetectionCuda.cpp.o
+
+.PHONY : SupportingFiles/FaceDetectionCuda.o
+
+# target to build an object file
+SupportingFiles/FaceDetectionCuda.cpp.o:
+	$(MAKE) -f CMakeFiles/cudaFaceDetect.dir/build.make CMakeFiles/cudaFaceDetect.dir/SupportingFiles/FaceDetectionCuda.cpp.o
+.PHONY : SupportingFiles/FaceDetectionCuda.cpp.o
+
+SupportingFiles/FaceDetectionCuda.i: SupportingFiles/FaceDetectionCuda.cpp.i
+
+.PHONY : SupportingFiles/FaceDetectionCuda.i
+
+# target to preprocess a source file
+SupportingFiles/FaceDetectionCuda.cpp.i:
+	$(MAKE) -f CMakeFiles/cudaFaceDetect.dir/build.make CMakeFiles/cudaFaceDetect.dir/SupportingFiles/FaceDetectionCuda.cpp.i
+.PHONY : SupportingFiles/FaceDetectionCuda.cpp.i
+
+SupportingFiles/FaceDetectionCuda.s: SupportingFiles/FaceDetectionCuda.cpp.s
+
+.PHONY : SupportingFiles/FaceDetectionCuda.s
+
+# target to generate assembly for a file
+SupportingFiles/FaceDetectionCuda.cpp.s:
+	$(MAKE) -f CMakeFiles/cudaFaceDetect.dir/build.make CMakeFiles/cudaFaceDetect.dir/SupportingFiles/FaceDetectionCuda.cpp.s
+.PHONY : SupportingFiles/FaceDetectionCuda.cpp.s
+
+SupportingFiles/FaceDetectionSimple.o: SupportingFiles/FaceDetectionSimple.cpp.o
+
+.PHONY : SupportingFiles/FaceDetectionSimple.o
+
+# target to build an object file
+SupportingFiles/FaceDetectionSimple.cpp.o:
+	$(MAKE) -f CMakeFiles/simpleFaceDetect.dir/build.make CMakeFiles/simpleFaceDetect.dir/SupportingFiles/FaceDetectionSimple.cpp.o
+.PHONY : SupportingFiles/FaceDetectionSimple.cpp.o
+
+SupportingFiles/FaceDetectionSimple.i: SupportingFiles/FaceDetectionSimple.cpp.i
+
+.PHONY : SupportingFiles/FaceDetectionSimple.i
+
+# target to preprocess a source file
+SupportingFiles/FaceDetectionSimple.cpp.i:
+	$(MAKE) -f CMakeFiles/simpleFaceDetect.dir/build.make CMakeFiles/simpleFaceDetect.dir/SupportingFiles/FaceDetectionSimple.cpp.i
+.PHONY : SupportingFiles/FaceDetectionSimple.cpp.i
+
+SupportingFiles/FaceDetectionSimple.s: SupportingFiles/FaceDetectionSimple.cpp.s
+
+.PHONY : SupportingFiles/FaceDetectionSimple.s
+
+# target to generate assembly for a file
+SupportingFiles/FaceDetectionSimple.cpp.s:
+	$(MAKE) -f CMakeFiles/simpleFaceDetect.dir/build.make CMakeFiles/simpleFaceDetect.dir/SupportingFiles/FaceDetectionSimple.cpp.s
+.PHONY : SupportingFiles/FaceDetectionSimple.cpp.s
+
+TestLibrary.o: TestLibrary.cpp.o
+
+.PHONY : TestLibrary.o
+
+# target to build an object file
+TestLibrary.cpp.o:
+	$(MAKE) -f CMakeFiles/testlibrary.dir/build.make CMakeFiles/testlibrary.dir/TestLibrary.cpp.o
+.PHONY : TestLibrary.cpp.o
+
+TestLibrary.i: TestLibrary.cpp.i
+
+.PHONY : TestLibrary.i
+
+# target to preprocess a source file
+TestLibrary.cpp.i:
+	$(MAKE) -f CMakeFiles/testlibrary.dir/build.make CMakeFiles/testlibrary.dir/TestLibrary.cpp.i
+.PHONY : TestLibrary.cpp.i
+
+TestLibrary.s: TestLibrary.cpp.s
+
+.PHONY : TestLibrary.s
+
+# target to generate assembly for a file
+TestLibrary.cpp.s:
+	$(MAKE) -f CMakeFiles/testlibrary.dir/build.make CMakeFiles/testlibrary.dir/TestLibrary.cpp.s
+.PHONY : TestLibrary.cpp.s
 
 # Help Target
 help:
@@ -250,20 +330,28 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... cudaLibrary"
 	@echo "... simpleFaceDetect"
+	@echo "... testlibrary"
 	@echo "... cudaFaceDetect"
 	@echo "... edit_cache"
 	@echo "... cudaocv"
 	@echo "... cuda2"
-	@echo "... BasicFilter.o"
-	@echo "... BasicFilter.i"
-	@echo "... BasicFilter.s"
-	@echo "... FaceDetectionCuda.o"
-	@echo "... FaceDetectionCuda.i"
-	@echo "... FaceDetectionCuda.s"
-	@echo "... FaceDetectionSimple.o"
-	@echo "... FaceDetectionSimple.i"
-	@echo "... FaceDetectionSimple.s"
+	@echo "... MainLibrary/ObjectDetectCuda.o"
+	@echo "... MainLibrary/ObjectDetectCuda.i"
+	@echo "... MainLibrary/ObjectDetectCuda.s"
+	@echo "... SupportingFiles/BasicFilter.o"
+	@echo "... SupportingFiles/BasicFilter.i"
+	@echo "... SupportingFiles/BasicFilter.s"
+	@echo "... SupportingFiles/FaceDetectionCuda.o"
+	@echo "... SupportingFiles/FaceDetectionCuda.i"
+	@echo "... SupportingFiles/FaceDetectionCuda.s"
+	@echo "... SupportingFiles/FaceDetectionSimple.o"
+	@echo "... SupportingFiles/FaceDetectionSimple.i"
+	@echo "... SupportingFiles/FaceDetectionSimple.s"
+	@echo "... TestLibrary.o"
+	@echo "... TestLibrary.i"
+	@echo "... TestLibrary.s"
 .PHONY : help
 
 
