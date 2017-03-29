@@ -121,7 +121,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=cuda2
+CMAKE_PROJECT_NAME:STATIC=CudaImageArchitecture
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -289,6 +289,12 @@ CUDA_npps_LIBRARY:FILEPATH=/usr/local/cuda/lib64/libnpps.so
 
 //Path to a library.
 CUDA_rt_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/librt.so
+
+//Value Computed by CMake
+CudaImageArchitecture_BINARY_DIR:STATIC=/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug
+
+//Value Computed by CMake
+CudaImageArchitecture_SOURCE_DIR:STATIC=/home/kaushik/CLionProjects/CudaImageArchitecture
 
 //The directory containing a CMake configuration file for OpenCV.
 OpenCV_DIR:PATH=/usr/local/share/OpenCV
