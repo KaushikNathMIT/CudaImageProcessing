@@ -3,7 +3,7 @@
 //
 
 #include "MainLibrary/ObjectDetectCuda.h"
-
+#include "MainLibrary/BasicFilterCuda.h"
 void objectDetect();
 
 void basicFilter();
@@ -14,12 +14,12 @@ using namespace cv::cuda;
 
 
 int main() {
-    //objectDetect();
-    basicFilter();
+    objectDetect();
+    //basicFilter();
 }
 
 void basicFilter() {
-
+    BasicFilterCuda();
 }
 
 void objectDetect() {

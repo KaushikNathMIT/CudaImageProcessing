@@ -163,17 +163,17 @@ cudaFaceDetect/fast:
 .PHONY : cudaFaceDetect/fast
 
 #=============================================================================
-# Target rules for targets named cudaocv
+# Target rules for targets named cudaBasicOCV
 
 # Build rule for target.
-cudaocv: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cudaocv
-.PHONY : cudaocv
+cudaBasicOCV: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cudaBasicOCV
+.PHONY : cudaBasicOCV
 
 # fast build rule for target.
-cudaocv/fast:
-	$(MAKE) -f CMakeFiles/cudaocv.dir/build.make CMakeFiles/cudaocv.dir/build
-.PHONY : cudaocv/fast
+cudaBasicOCV/fast:
+	$(MAKE) -f CMakeFiles/cudaBasicOCV.dir/build.make CMakeFiles/cudaBasicOCV.dir/build
+.PHONY : cudaBasicOCV/fast
 
 #=============================================================================
 # Target rules for targets named cuda2
@@ -187,6 +187,33 @@ cuda2: cmake_check_build_system
 cuda2/fast:
 	$(MAKE) -f CMakeFiles/cuda2.dir/build.make CMakeFiles/cuda2.dir/build
 .PHONY : cuda2/fast
+
+MainLibrary/BasicFilterCuda.o: MainLibrary/BasicFilterCuda.cpp.o
+
+.PHONY : MainLibrary/BasicFilterCuda.o
+
+# target to build an object file
+MainLibrary/BasicFilterCuda.cpp.o:
+	$(MAKE) -f CMakeFiles/cudaLibrary.dir/build.make CMakeFiles/cudaLibrary.dir/MainLibrary/BasicFilterCuda.cpp.o
+.PHONY : MainLibrary/BasicFilterCuda.cpp.o
+
+MainLibrary/BasicFilterCuda.i: MainLibrary/BasicFilterCuda.cpp.i
+
+.PHONY : MainLibrary/BasicFilterCuda.i
+
+# target to preprocess a source file
+MainLibrary/BasicFilterCuda.cpp.i:
+	$(MAKE) -f CMakeFiles/cudaLibrary.dir/build.make CMakeFiles/cudaLibrary.dir/MainLibrary/BasicFilterCuda.cpp.i
+.PHONY : MainLibrary/BasicFilterCuda.cpp.i
+
+MainLibrary/BasicFilterCuda.s: MainLibrary/BasicFilterCuda.cpp.s
+
+.PHONY : MainLibrary/BasicFilterCuda.s
+
+# target to generate assembly for a file
+MainLibrary/BasicFilterCuda.cpp.s:
+	$(MAKE) -f CMakeFiles/cudaLibrary.dir/build.make CMakeFiles/cudaLibrary.dir/MainLibrary/BasicFilterCuda.cpp.s
+.PHONY : MainLibrary/BasicFilterCuda.cpp.s
 
 MainLibrary/ObjectDetectCuda.o: MainLibrary/ObjectDetectCuda.cpp.o
 
@@ -221,7 +248,7 @@ SupportingFiles/BasicFilter.o: SupportingFiles/BasicFilter.cpp.o
 
 # target to build an object file
 SupportingFiles/BasicFilter.cpp.o:
-	$(MAKE) -f CMakeFiles/cudaocv.dir/build.make CMakeFiles/cudaocv.dir/SupportingFiles/BasicFilter.cpp.o
+	$(MAKE) -f CMakeFiles/cudaBasicOCV.dir/build.make CMakeFiles/cudaBasicOCV.dir/SupportingFiles/BasicFilter.cpp.o
 .PHONY : SupportingFiles/BasicFilter.cpp.o
 
 SupportingFiles/BasicFilter.i: SupportingFiles/BasicFilter.cpp.i
@@ -230,7 +257,7 @@ SupportingFiles/BasicFilter.i: SupportingFiles/BasicFilter.cpp.i
 
 # target to preprocess a source file
 SupportingFiles/BasicFilter.cpp.i:
-	$(MAKE) -f CMakeFiles/cudaocv.dir/build.make CMakeFiles/cudaocv.dir/SupportingFiles/BasicFilter.cpp.i
+	$(MAKE) -f CMakeFiles/cudaBasicOCV.dir/build.make CMakeFiles/cudaBasicOCV.dir/SupportingFiles/BasicFilter.cpp.i
 .PHONY : SupportingFiles/BasicFilter.cpp.i
 
 SupportingFiles/BasicFilter.s: SupportingFiles/BasicFilter.cpp.s
@@ -239,7 +266,7 @@ SupportingFiles/BasicFilter.s: SupportingFiles/BasicFilter.cpp.s
 
 # target to generate assembly for a file
 SupportingFiles/BasicFilter.cpp.s:
-	$(MAKE) -f CMakeFiles/cudaocv.dir/build.make CMakeFiles/cudaocv.dir/SupportingFiles/BasicFilter.cpp.s
+	$(MAKE) -f CMakeFiles/cudaBasicOCV.dir/build.make CMakeFiles/cudaBasicOCV.dir/SupportingFiles/BasicFilter.cpp.s
 .PHONY : SupportingFiles/BasicFilter.cpp.s
 
 SupportingFiles/FaceDetectionCuda.o: SupportingFiles/FaceDetectionCuda.cpp.o
@@ -335,8 +362,11 @@ help:
 	@echo "... testlibrary"
 	@echo "... cudaFaceDetect"
 	@echo "... edit_cache"
-	@echo "... cudaocv"
+	@echo "... cudaBasicOCV"
 	@echo "... cuda2"
+	@echo "... MainLibrary/BasicFilterCuda.o"
+	@echo "... MainLibrary/BasicFilterCuda.i"
+	@echo "... MainLibrary/BasicFilterCuda.s"
 	@echo "... MainLibrary/ObjectDetectCuda.o"
 	@echo "... MainLibrary/ObjectDetectCuda.i"
 	@echo "... MainLibrary/ObjectDetectCuda.s"

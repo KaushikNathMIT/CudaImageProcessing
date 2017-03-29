@@ -65,6 +65,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/simpleFaceDetect.dir/DependInfo.cmake"
   "CMakeFiles/testlibrary.dir/DependInfo.cmake"
   "CMakeFiles/cudaFaceDetect.dir/DependInfo.cmake"
-  "CMakeFiles/cudaocv.dir/DependInfo.cmake"
+  "CMakeFiles/cudaBasicOCV.dir/DependInfo.cmake"
   "CMakeFiles/cuda2.dir/DependInfo.cmake"
   )

@@ -1,14 +1,10 @@
 //
-// Created by kaushik on 27/3/17.
+// Created by kaushik on 30/3/17.
 //
 
-#include <iostream>
-#include "opencv2/opencv.hpp"
+#include "BasicFilterCuda.h"
 
-using namespace std;
-using namespace cv;
-
-int main() {
+BasicFilterCuda::BasicFilterCuda() {
     long frameCount = 0;
     double totalT = 0.0;
     try {
@@ -41,5 +37,4 @@ int main() {
         std::cout << "Error: " << ex.what() << std::endl;
     }
     cout << "fps: " << 1.0 / (totalT / (double) frameCount) << "\n";
-    return 0;
 }

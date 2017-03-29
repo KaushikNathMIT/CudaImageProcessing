@@ -4,5 +4,5 @@
 /home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles/testlibrary.dir
 /home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles/cudaFaceDetect.dir
 /home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles/cudaocv.dir
+/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles/cudaBasicOCV.dir
 /home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles/cuda2.dir
