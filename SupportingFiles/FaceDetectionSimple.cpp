@@ -17,7 +17,6 @@ int main() {
     Mat image;
     VideoCapture cap(0);
     while (1) {
-        // Load Face cascade (.xml file)
         cap >> image;
         double t = (double) getTickCount();
         CascadeClassifier face_cascade;
