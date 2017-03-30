@@ -8,3 +8,4 @@ CTestTestfile.cmake
 cmake-build-debug/
 res/
 DataProcessingLibrary/MatrixMultiplication.*
+SupportingFiles/matmul.cu
