@@ -5,9 +5,12 @@
 #include "ImageProcessingLibrary/ObjectDetectCuda.h"
 #include "ImageProcessingLibrary/BasicFilterCuda.h"
 #include "DataProcessingLibrary/MatrixMultiplication.h"
+#include "DataProcessingLibrary/MatrixSearch.h"
 
 void objectDetect();
 
+
+void matSearch();
 
 using namespace std;
 using namespace cv;
@@ -15,17 +18,29 @@ using namespace cv::cuda;
 
 
 int main() {
+    int ch;
+    //cin>>ch;
     //objectDetect();
-    BasicFilterCuda();
-    /*int arr1[3][3], arr2[3][3];
-    for(int i=0; i<3; i++) {
-        for(int j=0; j<3; j++) {
-            arr1[i][j] = i+1;
-            arr2[i][j] = 9-(i+1);
-        }
-    }*/
-    //new MatMulCuda();
+    //BasicFilterCuda();
+    matSearch();
+    //MatMulCuda();
 
+}
+
+void matSearch() {
+    int M, N, m, n, searchValue;
+    cout<<"Enter search value";
+    cin>>searchValue;
+    M=1000,N=1000,m=10,n=10;
+    int arr[M*N];
+    for(int i=0; i<M*N; i++) {
+        arr[i] = i+1;
+    }
+    double time = getTickCount();
+    //new MatrixSearch(searchValue, arr ,M, N, m, n);
+    new MatrixSearch(searchValue, arr ,M, N, M, N);
+    time = (getTickCount()-time)/getTickFrequency();
+    cout<<"\nTime"<<time;
 }
 
 

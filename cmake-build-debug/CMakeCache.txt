@@ -299,6 +299,59 @@ CudaImageArchitecture_SOURCE_DIR:STATIC=/home/kaushik/CLionProjects/CudaImageArc
 //Dependencies for the target
 DataProcessingLibrary_LIB_DEPENDS:STATIC=general;/usr/local/cuda/lib64/libcudart_static.a;general;-lpthread;general;dl;general;/usr/lib/x86_64-linux-gnu/librt.so;general;/usr/local/cuda/lib64/libcudart_static.a;general;-lpthread;general;dl;general;/usr/lib/x86_64-linux-gnu/librt.so;
 
+//Executable for running MPI programs.
+MPIEXEC:FILEPATH=/usr/bin/mpiexec
+
+//Maximum number of processors available to run MPI applications.
+MPIEXEC_MAX_NUMPROCS:STRING=2
+
+//Flag used by MPI to specify the number of processes for MPIEXEC;
+// the next option will be the number of processes.
+MPIEXEC_NUMPROC_FLAG:STRING=-np
+
+//These flags will come after all flags given to MPIEXEC.
+MPIEXEC_POSTFLAGS:STRING=
+
+//These flags will be directly before the executable that is being
+// run by MPIEXEC.
+MPIEXEC_PREFLAGS:STRING=
+
+//Path to a program.
+MPI_CXX_COMPILER:FILEPATH=/usr/bin/mpicxx
+
+//MPI CXX compilation flags
+MPI_CXX_COMPILE_FLAGS:STRING=
+
+//MPI CXX include path
+MPI_CXX_INCLUDE_PATH:STRING=/usr/include/mpich
+
+//MPI CXX libraries to link against
+MPI_CXX_LIBRARIES:STRING=/usr/lib/x86_64-linux-gnu/libmpichcxx.so;/usr/lib/x86_64-linux-gnu/libmpich.so
+
+//MPI CXX linking flags
+MPI_CXX_LINK_FLAGS:STRING= -Wl,-Bsymbolic-functions  -Wl,-z,relro
+
+//Path to a program.
+MPI_C_COMPILER:FILEPATH=/usr/bin/mpicc
+
+//MPI C compilation flags
+MPI_C_COMPILE_FLAGS:STRING=
+
+//MPI C include path
+MPI_C_INCLUDE_PATH:STRING=/usr/include/mpich
+
+//MPI C libraries to link against
+MPI_C_LIBRARIES:STRING=/usr/lib/x86_64-linux-gnu/libmpich.so
+
+//MPI C linking flags
+MPI_C_LINK_FLAGS:STRING= -Wl,-Bsymbolic-functions  -Wl,-z,relro
+
+//Extra MPI libraries to link against
+MPI_EXTRA_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libmpich.so
+
+//MPI library to link against
+MPI_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libmpichcxx.so
+
 //The directory containing a CMake configuration file for OpenCV.
 OpenCV_DIR:PATH=/usr/local/share/OpenCV
 
@@ -470,7 +523,7 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 CUDA_64_BIT_DEVICE_CODE-ADVANCED:INTERNAL=1
 //List of intermediate files that are part of the cuda dependency
 // scanning.
-CUDA_ADDITIONAL_CLEAN_FILES:INTERNAL=/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles/cuda2.dir//cuda2_generated_test.cu.o.depend;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles/cuda2.dir/SupportingFiles/cuda2_generated_test.cu.o.depend;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles/DataProcessingLibrary.dir/DataProcessingLibrary/DataProcessingLibrary_generated_MatrixMultiplication.cu.o.depend;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles/cudamatmul.dir/SupportingFiles/cudamatmul_generated_matmul.cu.o.depend
+CUDA_ADDITIONAL_CLEAN_FILES:INTERNAL=/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles/cuda2.dir//cuda2_generated_test.cu.o.depend;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles/cuda2.dir/SupportingFiles/cuda2_generated_test.cu.o.depend;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles/DataProcessingLibrary.dir/DataProcessingLibrary/DataProcessingLibrary_generated_MatrixMultiplication.cu.o.depend;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles/cudamatmul.dir/SupportingFiles/cudamatmul_generated_matmul.cu.o.depend;/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles/DataProcessingLibrary.dir/DataProcessingLibrary/DataProcessingLibrary_generated_MatrixSearch.cu.o.depend
 //ADVANCED property for variable: CUDA_ATTACH_VS_BUILD_RULE_TO_CUDA_FILE
 CUDA_ATTACH_VS_BUILD_RULE_TO_CUDA_FILE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CUDA_BUILD_CUBIN
@@ -550,10 +603,48 @@ CUDA_parse_cubin:INTERNAL=/opt/clion-2016.3.3/bin/cmake/share/cmake-3.6/Modules/
 CUDA_run_nvcc:INTERNAL=/opt/clion-2016.3.3/bin/cmake/share/cmake-3.6/Modules/FindCUDA/run_nvcc.cmake
 //Details about finding CUDA
 FIND_PACKAGE_MESSAGE_DETAILS_CUDA:INTERNAL=[/usr/local/cuda][/usr/local/cuda/bin/nvcc][/usr/local/cuda/include][/usr/local/cuda/lib64/libcudart.so][v8.0()]
+//Details about finding MPI_C
+FIND_PACKAGE_MESSAGE_DETAILS_MPI_C:INTERNAL=[/usr/lib/x86_64-linux-gnu/libmpich.so][/usr/include/mpich][v()]
+//Details about finding MPI_CXX
+FIND_PACKAGE_MESSAGE_DETAILS_MPI_CXX:INTERNAL=[/usr/lib/x86_64-linux-gnu/libmpichcxx.so;/usr/lib/x86_64-linux-gnu/libmpich.so][/usr/include/mpich][v()]
 //Details about finding OpenCV
 FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/usr/local][v3.2.0()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//ADVANCED property for variable: MPIEXEC
+MPIEXEC-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPIEXEC_MAX_NUMPROCS
+MPIEXEC_MAX_NUMPROCS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPIEXEC_NUMPROC_FLAG
+MPIEXEC_NUMPROC_FLAG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPIEXEC_POSTFLAGS
+MPIEXEC_POSTFLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPIEXEC_PREFLAGS
+MPIEXEC_PREFLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_CXX_COMPILER
+MPI_CXX_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_CXX_COMPILE_FLAGS
+MPI_CXX_COMPILE_FLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_CXX_INCLUDE_PATH
+MPI_CXX_INCLUDE_PATH-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_CXX_LIBRARIES
+MPI_CXX_LIBRARIES-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_CXX_LINK_FLAGS
+MPI_CXX_LINK_FLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_C_COMPILER
+MPI_C_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_C_COMPILE_FLAGS
+MPI_C_COMPILE_FLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_C_INCLUDE_PATH
+MPI_C_INCLUDE_PATH-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_C_LIBRARIES
+MPI_C_LIBRARIES-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_C_LINK_FLAGS
+MPI_C_LINK_FLAGS-ADVANCED:INTERNAL=1
+//Scratch variable for MPI header detection
+MPI_HEADER_PATH:INTERNAL=MPI_HEADER_PATH-NOTFOUND
+//Scratch variable for MPI lib detection
+MPI_LIB:INTERNAL=MPI_LIB-NOTFOUND
 //ADVANCED property for variable: ProcessorCount_cmd_getconf
 ProcessorCount_cmd_getconf-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ProcessorCount_cmd_sysctl
