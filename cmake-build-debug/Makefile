@@ -124,6 +124,19 @@ cudaLibrary/fast:
 .PHONY : cudaLibrary/fast
 
 #=============================================================================
+# Target rules for targets named DataProcessingLibrary
+
+# Build rule for target.
+DataProcessingLibrary: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 DataProcessingLibrary
+.PHONY : DataProcessingLibrary
+
+# fast build rule for target.
+DataProcessingLibrary/fast:
+	$(MAKE) -f CMakeFiles/DataProcessingLibrary.dir/build.make CMakeFiles/DataProcessingLibrary.dir/build
+.PHONY : DataProcessingLibrary/fast
+
+#=============================================================================
 # Target rules for targets named simpleFaceDetect
 
 # Build rule for target.
@@ -163,6 +176,19 @@ cudaFaceDetect/fast:
 .PHONY : cudaFaceDetect/fast
 
 #=============================================================================
+# Target rules for targets named cudamatmul
+
+# Build rule for target.
+cudamatmul: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cudamatmul
+.PHONY : cudamatmul
+
+# fast build rule for target.
+cudamatmul/fast:
+	$(MAKE) -f CMakeFiles/cudamatmul.dir/build.make CMakeFiles/cudamatmul.dir/build
+.PHONY : cudamatmul/fast
+
+#=============================================================================
 # Target rules for targets named cudaBasicOCV
 
 # Build rule for target.
@@ -188,59 +214,59 @@ cuda2/fast:
 	$(MAKE) -f CMakeFiles/cuda2.dir/build.make CMakeFiles/cuda2.dir/build
 .PHONY : cuda2/fast
 
-MainLibrary/BasicFilterCuda.o: MainLibrary/BasicFilterCuda.cpp.o
+ImageProcessingLibrary/BasicFilterCuda.o: ImageProcessingLibrary/BasicFilterCuda.cpp.o
 
-.PHONY : MainLibrary/BasicFilterCuda.o
-
-# target to build an object file
-MainLibrary/BasicFilterCuda.cpp.o:
-	$(MAKE) -f CMakeFiles/cudaLibrary.dir/build.make CMakeFiles/cudaLibrary.dir/MainLibrary/BasicFilterCuda.cpp.o
-.PHONY : MainLibrary/BasicFilterCuda.cpp.o
-
-MainLibrary/BasicFilterCuda.i: MainLibrary/BasicFilterCuda.cpp.i
-
-.PHONY : MainLibrary/BasicFilterCuda.i
-
-# target to preprocess a source file
-MainLibrary/BasicFilterCuda.cpp.i:
-	$(MAKE) -f CMakeFiles/cudaLibrary.dir/build.make CMakeFiles/cudaLibrary.dir/MainLibrary/BasicFilterCuda.cpp.i
-.PHONY : MainLibrary/BasicFilterCuda.cpp.i
-
-MainLibrary/BasicFilterCuda.s: MainLibrary/BasicFilterCuda.cpp.s
-
-.PHONY : MainLibrary/BasicFilterCuda.s
-
-# target to generate assembly for a file
-MainLibrary/BasicFilterCuda.cpp.s:
-	$(MAKE) -f CMakeFiles/cudaLibrary.dir/build.make CMakeFiles/cudaLibrary.dir/MainLibrary/BasicFilterCuda.cpp.s
-.PHONY : MainLibrary/BasicFilterCuda.cpp.s
-
-MainLibrary/ObjectDetectCuda.o: MainLibrary/ObjectDetectCuda.cpp.o
-
-.PHONY : MainLibrary/ObjectDetectCuda.o
+.PHONY : ImageProcessingLibrary/BasicFilterCuda.o
 
 # target to build an object file
-MainLibrary/ObjectDetectCuda.cpp.o:
-	$(MAKE) -f CMakeFiles/cudaLibrary.dir/build.make CMakeFiles/cudaLibrary.dir/MainLibrary/ObjectDetectCuda.cpp.o
-.PHONY : MainLibrary/ObjectDetectCuda.cpp.o
+ImageProcessingLibrary/BasicFilterCuda.cpp.o:
+	$(MAKE) -f CMakeFiles/cudaLibrary.dir/build.make CMakeFiles/cudaLibrary.dir/ImageProcessingLibrary/BasicFilterCuda.cpp.o
+.PHONY : ImageProcessingLibrary/BasicFilterCuda.cpp.o
 
-MainLibrary/ObjectDetectCuda.i: MainLibrary/ObjectDetectCuda.cpp.i
+ImageProcessingLibrary/BasicFilterCuda.i: ImageProcessingLibrary/BasicFilterCuda.cpp.i
 
-.PHONY : MainLibrary/ObjectDetectCuda.i
+.PHONY : ImageProcessingLibrary/BasicFilterCuda.i
 
 # target to preprocess a source file
-MainLibrary/ObjectDetectCuda.cpp.i:
-	$(MAKE) -f CMakeFiles/cudaLibrary.dir/build.make CMakeFiles/cudaLibrary.dir/MainLibrary/ObjectDetectCuda.cpp.i
-.PHONY : MainLibrary/ObjectDetectCuda.cpp.i
+ImageProcessingLibrary/BasicFilterCuda.cpp.i:
+	$(MAKE) -f CMakeFiles/cudaLibrary.dir/build.make CMakeFiles/cudaLibrary.dir/ImageProcessingLibrary/BasicFilterCuda.cpp.i
+.PHONY : ImageProcessingLibrary/BasicFilterCuda.cpp.i
 
-MainLibrary/ObjectDetectCuda.s: MainLibrary/ObjectDetectCuda.cpp.s
+ImageProcessingLibrary/BasicFilterCuda.s: ImageProcessingLibrary/BasicFilterCuda.cpp.s
 
-.PHONY : MainLibrary/ObjectDetectCuda.s
+.PHONY : ImageProcessingLibrary/BasicFilterCuda.s
 
 # target to generate assembly for a file
-MainLibrary/ObjectDetectCuda.cpp.s:
-	$(MAKE) -f CMakeFiles/cudaLibrary.dir/build.make CMakeFiles/cudaLibrary.dir/MainLibrary/ObjectDetectCuda.cpp.s
-.PHONY : MainLibrary/ObjectDetectCuda.cpp.s
+ImageProcessingLibrary/BasicFilterCuda.cpp.s:
+	$(MAKE) -f CMakeFiles/cudaLibrary.dir/build.make CMakeFiles/cudaLibrary.dir/ImageProcessingLibrary/BasicFilterCuda.cpp.s
+.PHONY : ImageProcessingLibrary/BasicFilterCuda.cpp.s
+
+ImageProcessingLibrary/ObjectDetectCuda.o: ImageProcessingLibrary/ObjectDetectCuda.cpp.o
+
+.PHONY : ImageProcessingLibrary/ObjectDetectCuda.o
+
+# target to build an object file
+ImageProcessingLibrary/ObjectDetectCuda.cpp.o:
+	$(MAKE) -f CMakeFiles/cudaLibrary.dir/build.make CMakeFiles/cudaLibrary.dir/ImageProcessingLibrary/ObjectDetectCuda.cpp.o
+.PHONY : ImageProcessingLibrary/ObjectDetectCuda.cpp.o
+
+ImageProcessingLibrary/ObjectDetectCuda.i: ImageProcessingLibrary/ObjectDetectCuda.cpp.i
+
+.PHONY : ImageProcessingLibrary/ObjectDetectCuda.i
+
+# target to preprocess a source file
+ImageProcessingLibrary/ObjectDetectCuda.cpp.i:
+	$(MAKE) -f CMakeFiles/cudaLibrary.dir/build.make CMakeFiles/cudaLibrary.dir/ImageProcessingLibrary/ObjectDetectCuda.cpp.i
+.PHONY : ImageProcessingLibrary/ObjectDetectCuda.cpp.i
+
+ImageProcessingLibrary/ObjectDetectCuda.s: ImageProcessingLibrary/ObjectDetectCuda.cpp.s
+
+.PHONY : ImageProcessingLibrary/ObjectDetectCuda.s
+
+# target to generate assembly for a file
+ImageProcessingLibrary/ObjectDetectCuda.cpp.s:
+	$(MAKE) -f CMakeFiles/cudaLibrary.dir/build.make CMakeFiles/cudaLibrary.dir/ImageProcessingLibrary/ObjectDetectCuda.cpp.s
+.PHONY : ImageProcessingLibrary/ObjectDetectCuda.cpp.s
 
 SupportingFiles/BasicFilter.o: SupportingFiles/BasicFilter.cpp.o
 
@@ -358,18 +384,20 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... cudaLibrary"
+	@echo "... DataProcessingLibrary"
 	@echo "... simpleFaceDetect"
 	@echo "... testlibrary"
 	@echo "... cudaFaceDetect"
+	@echo "... cudamatmul"
 	@echo "... edit_cache"
 	@echo "... cudaBasicOCV"
 	@echo "... cuda2"
-	@echo "... MainLibrary/BasicFilterCuda.o"
-	@echo "... MainLibrary/BasicFilterCuda.i"
-	@echo "... MainLibrary/BasicFilterCuda.s"
-	@echo "... MainLibrary/ObjectDetectCuda.o"
-	@echo "... MainLibrary/ObjectDetectCuda.i"
-	@echo "... MainLibrary/ObjectDetectCuda.s"
+	@echo "... ImageProcessingLibrary/BasicFilterCuda.o"
+	@echo "... ImageProcessingLibrary/BasicFilterCuda.i"
+	@echo "... ImageProcessingLibrary/BasicFilterCuda.s"
+	@echo "... ImageProcessingLibrary/ObjectDetectCuda.o"
+	@echo "... ImageProcessingLibrary/ObjectDetectCuda.i"
+	@echo "... ImageProcessingLibrary/ObjectDetectCuda.s"
 	@echo "... SupportingFiles/BasicFilter.o"
 	@echo "... SupportingFiles/BasicFilter.i"
 	@echo "... SupportingFiles/BasicFilter.s"

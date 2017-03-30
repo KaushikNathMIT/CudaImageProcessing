@@ -1,8 +1,10 @@
 /home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles/cudaLibrary.dir
+/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles/DataProcessingLibrary.dir
 /home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles/simpleFaceDetect.dir
 /home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles/testlibrary.dir
 /home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles/cudaFaceDetect.dir
+/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles/cudamatmul.dir
 /home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles/cudaBasicOCV.dir
 /home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles/cuda2.dir

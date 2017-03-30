@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build
 CMakeFiles/cudaLibrary.dir/all:
 	$(MAKE) -f CMakeFiles/cudaLibrary.dir/build.make CMakeFiles/cudaLibrary.dir/depend
 	$(MAKE) -f CMakeFiles/cudaLibrary.dir/build.make CMakeFiles/cudaLibrary.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles --progress-num=7,8,9 "Built target cudaLibrary"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles --progress-num=9,10,11 "Built target cudaLibrary"
 .PHONY : CMakeFiles/cudaLibrary.dir/all
 
 # Include target in all.
@@ -97,13 +97,50 @@ clean: CMakeFiles/cudaLibrary.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/DataProcessingLibrary.dir
+
+# All Build rule for target.
+CMakeFiles/DataProcessingLibrary.dir/all:
+	$(MAKE) -f CMakeFiles/DataProcessingLibrary.dir/build.make CMakeFiles/DataProcessingLibrary.dir/depend
+	$(MAKE) -f CMakeFiles/DataProcessingLibrary.dir/build.make CMakeFiles/DataProcessingLibrary.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target DataProcessingLibrary"
+.PHONY : CMakeFiles/DataProcessingLibrary.dir/all
+
+# Include target in all.
+all: CMakeFiles/DataProcessingLibrary.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/DataProcessingLibrary.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/DataProcessingLibrary.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/DataProcessingLibrary.dir/rule
+
+# Convenience name for target.
+DataProcessingLibrary: CMakeFiles/DataProcessingLibrary.dir/rule
+
+.PHONY : DataProcessingLibrary
+
+# clean rule for target.
+CMakeFiles/DataProcessingLibrary.dir/clean:
+	$(MAKE) -f CMakeFiles/DataProcessingLibrary.dir/build.make CMakeFiles/DataProcessingLibrary.dir/clean
+.PHONY : CMakeFiles/DataProcessingLibrary.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/DataProcessingLibrary.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/simpleFaceDetect.dir
 
 # All Build rule for target.
 CMakeFiles/simpleFaceDetect.dir/all:
 	$(MAKE) -f CMakeFiles/simpleFaceDetect.dir/build.make CMakeFiles/simpleFaceDetect.dir/depend
 	$(MAKE) -f CMakeFiles/simpleFaceDetect.dir/build.make CMakeFiles/simpleFaceDetect.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles --progress-num=10,11 "Built target simpleFaceDetect"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles --progress-num=14,15 "Built target simpleFaceDetect"
 .PHONY : CMakeFiles/simpleFaceDetect.dir/all
 
 # Include target in all.
@@ -138,9 +175,10 @@ clean: CMakeFiles/simpleFaceDetect.dir/clean
 
 # All Build rule for target.
 CMakeFiles/testlibrary.dir/all: CMakeFiles/cudaLibrary.dir/all
+CMakeFiles/testlibrary.dir/all: CMakeFiles/DataProcessingLibrary.dir/all
 	$(MAKE) -f CMakeFiles/testlibrary.dir/build.make CMakeFiles/testlibrary.dir/depend
 	$(MAKE) -f CMakeFiles/testlibrary.dir/build.make CMakeFiles/testlibrary.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles --progress-num=12,13 "Built target testlibrary"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles --progress-num=16,17 "Built target testlibrary"
 .PHONY : CMakeFiles/testlibrary.dir/all
 
 # Include target in all.
@@ -150,7 +188,7 @@ all: CMakeFiles/testlibrary.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/testlibrary.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/testlibrary.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/testlibrary.dir/rule
@@ -177,7 +215,7 @@ clean: CMakeFiles/testlibrary.dir/clean
 CMakeFiles/cudaFaceDetect.dir/all:
 	$(MAKE) -f CMakeFiles/cudaFaceDetect.dir/build.make CMakeFiles/cudaFaceDetect.dir/depend
 	$(MAKE) -f CMakeFiles/cudaFaceDetect.dir/build.make CMakeFiles/cudaFaceDetect.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target cudaFaceDetect"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target cudaFaceDetect"
 .PHONY : CMakeFiles/cudaFaceDetect.dir/all
 
 # Include target in all.
@@ -208,13 +246,50 @@ clean: CMakeFiles/cudaFaceDetect.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/cudamatmul.dir
+
+# All Build rule for target.
+CMakeFiles/cudamatmul.dir/all:
+	$(MAKE) -f CMakeFiles/cudamatmul.dir/build.make CMakeFiles/cudamatmul.dir/depend
+	$(MAKE) -f CMakeFiles/cudamatmul.dir/build.make CMakeFiles/cudamatmul.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles --progress-num=12,13 "Built target cudamatmul"
+.PHONY : CMakeFiles/cudamatmul.dir/all
+
+# Include target in all.
+all: CMakeFiles/cudamatmul.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/cudamatmul.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/cudamatmul.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/cudamatmul.dir/rule
+
+# Convenience name for target.
+cudamatmul: CMakeFiles/cudamatmul.dir/rule
+
+.PHONY : cudamatmul
+
+# clean rule for target.
+CMakeFiles/cudamatmul.dir/clean:
+	$(MAKE) -f CMakeFiles/cudamatmul.dir/build.make CMakeFiles/cudamatmul.dir/clean
+.PHONY : CMakeFiles/cudamatmul.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/cudamatmul.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/cudaBasicOCV.dir
 
 # All Build rule for target.
 CMakeFiles/cudaBasicOCV.dir/all:
 	$(MAKE) -f CMakeFiles/cudaBasicOCV.dir/build.make CMakeFiles/cudaBasicOCV.dir/depend
 	$(MAKE) -f CMakeFiles/cudaBasicOCV.dir/build.make CMakeFiles/cudaBasicOCV.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target cudaBasicOCV"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target cudaBasicOCV"
 .PHONY : CMakeFiles/cudaBasicOCV.dir/all
 
 # Include target in all.
@@ -251,7 +326,7 @@ clean: CMakeFiles/cudaBasicOCV.dir/clean
 CMakeFiles/cuda2.dir/all:
 	$(MAKE) -f CMakeFiles/cuda2.dir/build.make CMakeFiles/cuda2.dir/depend
 	$(MAKE) -f CMakeFiles/cuda2.dir/build.make CMakeFiles/cuda2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target cuda2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kaushik/CLionProjects/CudaImageArchitecture/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target cuda2"
 .PHONY : CMakeFiles/cuda2.dir/all
 
 # Include target in all.
