@@ -12,6 +12,8 @@ void objectDetect();
 
 void matSearch();
 
+void serialMatrixSearch(int value, int pInt[], int m, int n);
+
 using namespace std;
 using namespace cv;
 using namespace cv::cuda;
@@ -36,11 +38,18 @@ void matSearch() {
     for(int i=0; i<M*N; i++) {
         arr[i] = i+1;
     }
+
+    new MatrixSearch(searchValue, arr ,M, N, 10, 10);
+    serialMatrixSearch(searchValue, arr ,M, N);
+}
+
+void serialMatrixSearch(int value, int pInt[], int m, int n) {
     double time = getTickCount();
-    //new MatrixSearch(searchValue, arr ,M, N, m, n);
-    new MatrixSearch(searchValue, arr ,M, N, M, N);
+    for(int i=0;i<m*n;i++) {
+        if(value==pInt[i]) printf("\nOccurence found at index %d, %d", i/n+1,i%n+1);
+    }
     time = (getTickCount()-time)/getTickFrequency();
-    cout<<"\nTime"<<time;
+    cout<<"\nTime "<<time;
 }
 
 

@@ -4,15 +4,19 @@
 
 #ifndef CUDAIMAGEARCHITECTURE_MATRIXSEARCH_H
 #define CUDAIMAGEARCHITECTURE_MATRIXSEARCH_H
+
 #include "cuda_runtime.h"
 #include "device_launch_parameters.h"
 #include <iostream>
-#include <stdio.h>
+#include "opencv2/opencv.hpp"
+
+
+using namespace cv;
 using namespace std;
 
 class MatrixSearch {
 public:
-    MatrixSearch(int , int*, int, int, int, int);
+    MatrixSearch(int, int *, int, int, int, int);
 };
 
 

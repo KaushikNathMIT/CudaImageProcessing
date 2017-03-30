@@ -22,6 +22,7 @@ target_link_libraries(cudaFaceDetect ${OpenCV_LIBS})
 target_link_libraries(simpleFaceDetect ${OpenCV_LIBS})
 target_link_libraries(cudaLibrary ${OpenCV_LIBS})
 target_link_libraries(DataProcessingLibrary ${CUDA_LIBRARIES})
+target_link_libraries(DataProcessingLibrary ${OpenCV_LIBS})
 target_link_libraries(testlibrary cudaLibrary)
 target_link_libraries(testlibrary DataProcessingLibrary)
 

@@ -12,7 +12,10 @@ __global__ void matrixSplit(int m, int n, int* a, int searchValue, int N) {
 
     for(k=0;k<m;k++)
         for(l=0;l<n;l++)
-            if(searchValue == a[(i*m +k)*N+ j*n +l]) printf("\nOccurence found at index %d, %d", (i*m +k)+1, j*n +l+1);
+            if(searchValue == a[(i*m +k)*N+ j*n +l]) {
+                printf("\nOccurence found at index %d, %d", (i*m +k)+1, j*n +l+1);
+                //break;
+            }
 }
 
 
@@ -22,7 +25,10 @@ MatrixSearch::MatrixSearch(int searchValue, int* arr, int M, int N, int m, int n
     for(int i=0; i<M*N; i++) x[i] = arr[i];
     cudaMalloc(&dx, M*N*sizeof(int));
     cudaMemcpy(dx, x, M*N*sizeof(int), cudaMemcpyHostToDevice);
+    double time = getTickCount();
     matrixSplit<<<M/m, N/n>>>(m, n, dx, searchValue, N);
+    time = (getTickCount()-time)/getTickFrequency();
+    cout<<"\nTime "<<time;
     cudaFree(dx);
     free(x);
 }
